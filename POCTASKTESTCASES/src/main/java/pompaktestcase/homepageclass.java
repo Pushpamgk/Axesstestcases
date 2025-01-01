@@ -74,6 +74,7 @@ public class homepageclass extends baseclasstestcase {
 	public void Verify_Text_Subscription() {
 		boolean Subscript = driver.findElement(Subscription).isDisplayed();
 		System.out.println("Text SUBSCRIPTION is visible :" + Subscript);
+		Assert.assertTrue(Subscript,true);
 	}
 
 	public void EnterEmail_And_ClickArrow() {
