@@ -32,17 +32,13 @@ public class stepclasstestcase extends baseclasstestcase {
 
 	@Given("User Launch the browser")
 	public void user_launch_the_browser() {
-
 		Browserlaunch();
 		Maximize();
-
 	}
 
 	@Then("Navigate to automation exercise url")
 	public void navigate_to_automation_exercise_url() {
-
 		WebsiteUrl("https://automationexercise.com/");
-
 	}
 
 	@Then("Verify that home page is visible successfully")
@@ -50,42 +46,36 @@ public class stepclasstestcase extends baseclasstestcase {
 		Implicitlywait();
 		hm.verifyhomepage();
 		Thread.sleep(2000);
-
 	}
 
 	@Then("User Click on Signup or Login button")
 	public void user_click_on_signup_login_button() {
 		Implicitlywait();
 		hm.ClickSignup_or_loginbutton();
-
 	}
 
 	@Then("Verify New User Signup is visible")
 	public void verify_new_user_signup_is_visible() {
 		Implicitlywait();
 		log.Verify_NewUserSignup();
-
 	}
 
 	@Then("User Enter name and email address")
 	public void user_enter_name_and_email_address() {
 		Implicitlywait();
 		log.Entername_and_Email();
-
 	}
 
 	@Then("Click Signup button")
 	public void click_signup_button() {
 		Implicitlywait();
 		log.ClickSignup_button();
-
 	}
 
 	@Then("Verify that ENTER ACCOUNT INFORMATION is visible")
 	public void verify_that_enter_account_information_is_visible() {
 		Implicitlywait();
 		ac.Verify_EnterAccountInformation();
-
 	}
 
 	@Then("User  Select Mr or Mrs")
