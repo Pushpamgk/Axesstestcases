@@ -38,6 +38,7 @@ public class Paymentpageclass extends baseclasstestcase {
 	public void VerifySuccessmessage_Orderplaced() {
 		boolean Success = driver.findElement(Successmsg).isDisplayed();
 		System.out.println("Success message is displayed:"+Success);
+		Assert.assertTrue(Success,true);
 	}
 	
 	public void Click_DownloadInvoice_And_VerifyInvoice() {
